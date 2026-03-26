@@ -153,16 +153,23 @@
         
         /* Candles */
         .candle {
-            position: absolute;
-            width: 8px;
-            height: 30px;
-            background: linear-gradient(to top, #ff6b35, #fff);
-            top: -30px;
-            border-radius: 4px 4px 2px 2px;
-        .candle:nth-child(1) { left: 35px; }
-        .candle:nth-child(2) { left: 70px; }
-        .candle:nth-child(3) { left: 105px; }
-        }
+           .top {
+    position: relative;
+}
+
+.candle {
+    width: 10px;
+    height: 35px;
+    background: orange;
+    position: absolute;
+    top: -35px;
+    border-radius: 3px;
+}
+
+/* 👉 3 candles अलग-अलग जगह */
+.candle:nth-child(1) { left: 40px; }
+.candle:nth-child(2) { left: 80px; }
+.candle:nth-child(3) { left: 120px; } 
         @keyframes flicker {
             0%, 100% { box-shadow: 0 0 10px #ff6b35; }
             50% { box-shadow: 0 0 20px #ff6b35, 0 0 30px #ff6b35; }
