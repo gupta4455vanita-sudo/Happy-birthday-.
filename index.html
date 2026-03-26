@@ -141,15 +141,20 @@
         .layer-4 { width: 180px; height: 50px; bottom: 100px; left: 85px; background: linear-gradient(145deg, #a87a3a, #e0c08e); }
         
         /* Top */
-        .top {
-    width: 160px;
-    height: 50px;
-    bottom: 65px;
-    left: 110px;
-    background: linear-gradient(145deg, #ffffff, #f1f1f1);
-    border-radius: 25px;
+    .top {
+    width: 140px;
+    height: 40px;
+    bottom: 60px;
+    left: 105px;
+    background: linear-gradient(145deg, #ffeb99, #ffd700);
+    border-radius: 20px;
     position: relative;
-        }
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    }
         
         /* Candles */
         .candle {
@@ -158,18 +163,14 @@
 }
 
 .candle {
-    width: 10px;
-    height: 35px;
-    background: orange;
-    position: absolute;
-    top: -35px;
-    border-radius: 3px;
+    width: 8px;
+    height: 30px;
+    background: linear-gradient(to top, #ff6b35, #fff);
+    position: relative;
+    top: -30px;
+    border-radius: 4px 4px 2px 2px;
 }
-
-/* 👉 3 candles अलग-अलग जगह */
-.candle:nth-child(1) { left: 40px; }
-.candle:nth-child(2) { left: 80px; }
-.candle:nth-child(3) { left: 120px; } 
+ 
         @keyframes flicker {
             0%, 100% { box-shadow: 0 0 10px #ff6b35; }
             50% { box-shadow: 0 0 20px #ff6b35, 0 0 30px #ff6b35; }
