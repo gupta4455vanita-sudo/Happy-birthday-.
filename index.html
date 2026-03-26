@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Mama को जन्मदिन की शुभकामनाएँ! 🎉</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Floating balloons decoration */
+        .balloon {
+            position: absolute;
+            width: 80px;
+            height: 100px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px;
+            background: #333;
+        }
+        
+        .balloon:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; background: linear-gradient(45deg, #ff6b6b, #feca57); }
+        .balloon:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; background: linear-gradient(45deg, #48dbfb, #0abde3); }
+        .balloon:nth-child(3) { top: 30%; right: 25%; animation-delay: 4s; background: linear-gradient(45deg, #ff9ff3, #f368e0); }
+        .balloon:nth-child(4) { top: 70%; left: 20%; animation-delay: 1s; background: linear-gradient(45deg, #54a0ff, #5f27cd); }
+        .balloon:nth-child(5) { top: 10%; left: 60%; animation-delay: 3s; background: linear-gradient(45deg, #00d2d3, #5f27cd); }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-2deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+        
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Birthday title */
+        .birthday-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        /* Wish message */
+        .wish-message {
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            margin: 40px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .wish-text {
+            font-size: 1.4rem;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+        
+        /* Cake container */
+        .cake-container {
+            margin: 50px 0;
+            perspective: 1000px;
+        }
+        
+        .cake {
+            width: 350px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: cakeRotate 10s linear infinite;
+        }
+        
+        @keyframes cakeRotate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        
+        /* Cake layers */
+        .layer {
+            position: absolute;
+            border-radius: 15px;
+            background: linear-gradient(145deg, #d4a574, #f4e4bc);
+            box-shadow: 
+                inset 5px 5px 10px rgba(255,255,255,0.5),
+                8px 8px 16px rgba(0,0,0,0.3);
+        }
+        
+        .layer-1 { width: 300px; height: 80px; bottom: 220px; left: 25px; }
+        .layer-2 { width: 260px; height: 70px; bottom: 180px; left: 45px; background: linear-gradient(145deg, #c89664, #f0d8a8); }
+        .layer-3 { width: 220px; height: 60px; bottom: 140px; left: 65px; background: linear-gradient(145deg, #b8864a, #e8c89e); }
+        .layer-4 { width: 180px; height: 50px; bottom: 100px; left: 85px; background: linear-gradient(145deg, #a87a3a, #e0c08e); }
+        
+        /* Top */
+        .top {
+            width: 140px;
+            height: 40px;
+            bottom: 60px;
+            left: 105px;
+            background: linear-gradient(145deg, #ffeb99, #ffd700);
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        /* Candles */
+        .candle {
+            position: absolute;
+            width: 8px;
+            height: 30px;
+            background: linear-gradient(to top, #ff6b35, #fff);
+            top: -30px;
+            border-radius: 4px 4px 2px 2px;
+        }
+        
+        .candle:nth-child(1) { left: 20px; animation: flicker 2s infinite; }
+        .candle:nth-child(2) { left: 50px; animation: flicker 2s infinite 0.3s; }
+        .candle:nth-child(3) { left: 80px; animation: flicker 2s infinite 0.6s; }
+        
+        @keyframes flicker {
+            0%, 100% { box-shadow: 0 0 10px #ff6b35; }
+            50% { box-shadow: 0 0 20px #ff6b35, 0 0 30px #ff6b35; }
+        }
+        
+        /* Cake name */
+        .cake-name {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,0.9);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #e74c3c;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Bhanja bracket */
+        .bhanja-tag {
+            position: absolute;
+            top: -10px;
+            right: -20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Additional wishes */
+        .extra-wishes {
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .wish-item {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #2c3e50;
+        }
+        
+        /* Confetti */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff6b6b;
+            animation: confetti-fall 3s linear infinite;
+        }
+        
+        .confetti:nth-child(1) { left: 10%; animation-delay: 0s; background: #ff6b6b; }
+        .confetti:nth-child(2) { left: 20%; animation-delay: 0.5s; background: #4ecdc4; }
+        .confetti:nth-child(3) { left: 30%; animation-delay: 1s; background: #45b7d1; }
+        .confetti:nth-child(4) { left: 40%; animation-delay: 1.5s; background: #f9ca24; }
+        .confetti:nth-child(5) { left: 50%; animation-delay: 2s; background: #ff9ff3; }
+        
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating balloons -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    
+    <!-- Confetti -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    
+    <div class="container">
+        <h1 class="birthday-title">🎂 जन्मदिन मुबारक हो Manish मामा! 🎂</h1>
+        
+        <div class="wish-message">
+            <p class="wish-text">
+                प्रिय <span class="highlight">Manish मामा</span>,<br><br>
+                आपका भांजा आपको जन्मदिन की सबसे प्यारी शुभकामनाएँ देता है! 🌟<br>
+                आपने हमेशा मुझे प्यार, केयर और मार्गदर्शन दिया है।<br>
+                आपका यह नया साल खुशियों, सफलता और अच्छे स्वास्थ्य से भरा हो।<br><br>
+                <span class="highlight">आप दुनिया के सबसे अच्छे मामा हो! 💖</span>
+            </p>
+        </div>
+        
+        <!-- Birthday Cake -->
+        <div class="cake-container">
+            <div class="cake">
+                <div class="layer layer-1"></div>
+                <div class="layer layer-2"></div>
+                <div class="layer layer-3"></div>
+                <div class="layer layer-4"></div>
+                <div class="top">
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="cake-name">Manish</div>
+                    <div class="bhanja-tag">(भांजा)</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="extra-wishes">
+            <h3 style="color: #e74c3c; margin-bottom: 20px;">💝 भांजे की खास शुभकामनाएँ मामा जी के लिए:</h3>
+            <div class="wish-item">🎯 आपकी हर इच्छा पूरी हो!</div>
+            <div class="wish-item">💰 हमेशा धन-वैभव बना रहे!</div>
+            <div class="wish-item">👨‍👩‍👧‍👦 पूरा परिवार खुशहाल रहे!</div>
+            <div class="wish-item">🌟 आपकी जिंदगी हमेशा चमकती रहे!</div>
+            <div class="wish-item">🎊 आज का दिन सबसे खास और यादगार हो! 🎊</div>
+        </div>
+        
+        <p style="margin-top: 40px; font-size: 1.1rem; color: #666;">
+            🥳 मामा जी को जन्मदिन की अनगिनत शुभकामनाएँ! 🥳<br>
+            <strong>आपका प्यारा भांजा</strong>
+        </p>
+    </div>
+</body>
+</html>
