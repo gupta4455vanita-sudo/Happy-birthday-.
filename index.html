@@ -124,13 +124,16 @@
         
         /* Cake layers */
         .layer {
-            position: absolute;
-            border-radius: 15px;
-            background: linear-gradient(145deg, #d4a574, #f4e4bc);
-            box-shadow: 
-                inset 5px 5px 10px rgba(255,255,255,0.5),
-                8px 8px 16px rgba(0,0,0,0.3);
-        }
+          
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #3b1f1f, #5a2e2e);
+    box-shadow: 
+        inset 5px 5px 10px rgba(255,255,255,0.1),
+        inset -5px -5px 10px rgba(0,0,0,0.5),
+        10px 10px 20px rgba(0,0,0,0.7);
+          }  
+        
         
         .layer-1 { width: 300px; height: 80px; bottom: 220px; left: 25px; }
         .layer-2 { width: 260px; height: 70px; bottom: 180px; left: 45px; background: linear-gradient(145deg, #c89664, #f0d8a8); }
@@ -139,13 +142,13 @@
         
         /* Top */
         .top {
-            width: 140px;
-            height: 40px;
-            bottom: 60px;
-            left: 105px;
-            background: linear-gradient(145deg, #ffeb99, #ffd700);
-            border-radius: 20px;
-            position: relative;
+    width: 160px;
+    height: 50px;
+    bottom: 65px;
+    left: 110px;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 25px;
+    position: relative;
         }
         
         /* Candles */
@@ -156,7 +159,10 @@
             background: linear-gradient(to top, #ff6b35, #fff);
             top: -30px;
             border-radius: 4px 4px 2px 2px;
-        }
+        <div class="cherry"></div>
+<div class="cherry"></div>
+<div class="cherry"></div>
+            }
         
         .candle:nth-child(1) { left: 20px; animation: flicker 2s infinite; }
         .candle:nth-child(2) { left: 50px; animation: flicker 2s infinite 0.3s; }
@@ -262,6 +268,8 @@
                 <div class="layer layer-3"></div>
                 <div class="layer layer-4"></div>
                 <div class="top">
+                 <div class="drip"></div>
+                 
                     <div class="candle"></div>
                     <div class="candle"></div>
                     <div class="candle"></div>
